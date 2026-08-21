@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    .main {
+        background-color: black;
+        width: 350px;
+        margin: auto;
+        height: 400px;
+        padding: 20px;
+    }
+
+    .space {
+        width: 350px;
+        height: 80px;
+        background-color: white;
+    }
+
+    .parent {
+        color: white;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .parent div {
+        margin: 10px;
+        color: black;
+        background-color: white;
+        border-radius: 6px;
+        padding: 10px;
+    }
+
+    .parent .child4 {
+        background-color: sandybrown;
+        color: white;
+    }
+
+    .parent .child20 {
+        background-color: green;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <!-- <div class="space"> -->
+        <input type="text" class="space" id="inputbox" readonly>
+        <div class="parent">
+            <div class="child1" onclick="cs()">C</div>
+            <div class="child2" onclick="show('X')">X</div>
+            <div class="child3" onclick="addOperator('%')">%</div>
+            <div class="child4" onclick="addOperator('/')">/</div>
+            <div class="child5" onclick="show('7')">7</div>
+            <div class="child6" onclick="show('8')">8</div>
+            <div class="child7" onclick="show('9')">9</div>
+            <div class="child4" onclick="addOperator('*')">*</div>
+            <div class="child9" onclick="show('4')">4</div>
+            <div class="child10" onclick="show('5')">5</div>
+            <div class="child11" onclick="show('6')">6</div>
+            <div class="child4" onclick="addOperator('-')">-</div>
+            <div class="child13" onclick="show('1')">1</div>
+            <div class="child14" onclick="show('2')">2</div>
+            <div class="child15" onclick="show('3')">3</div>
+            <div class="child4" onclick="addOperator('+')">+</div>
+            <div class="child17" onclick="show('00')">00</div>
+            <div class="child18" onclick="show('0')">0</div>
+            <div class="child19" onclick="show('.')">.</div>
+            <div class="child20" onclick="calculate('=')">=</div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
