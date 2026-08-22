@@ -1,0 +1,52 @@
+    *{
+padding:0;
+margin: 0;
+    }
+    body{
+     background: linear-gradient(45deg, #fada61 0.000%, #ff9188 50.000%, #ff5acd );
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .main {
+        background-color: black;
+        width: 350px;
+        margin: auto;
+        height: 400px;
+        padding: 20px;
+    }
+
+    .space {
+        font-size:x-large;
+        width: 350px;
+        text-align:right;
+        height: 80px;
+        background-color: white;
+    }
+
+    .parent {
+        color: white;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .parent div {
+        margin: 10px;
+        color: black;
+        background-color: white;
+        border-radius: 6px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .parent .child4 {
+        background-color: sandybrown;
+        color: white;
+    }
+
+    .parent .child20 {
+        background-color: green;
+    }
